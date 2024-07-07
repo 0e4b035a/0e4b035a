@@ -1,4 +1,4 @@
-# [0e4b035a](0e4b035a.com)
+# 0e4b035a
 
 Chief Cyborg Engineer
 
