@@ -37,10 +37,19 @@ Station x0e,  adrift in a stranger's galaxy
 
 I am a Chief Cyborg Engineer, it would be remiss of me not to include a bit of code in my first upload. 
 
-```go
-func gen0e4b035a() string {
-	chars := "0123456789abcdef"
-	return string([]rune{rune(chars[0]), rune(chars[14]), rune(chars[4]), rune(chars[11]), rune(chars[0]), rune(chars[3]), rune(chars[5]), rune(chars[10])})
+```java
+@Service
+public class DataTypeService {
+    public List<BuiltInDataType> getAllDataTypes() {
+        return Arrays.stream(BuiltInDataType.values())
+                .collect(Collectors.toList());
+    }
+
+    public List<DataType> getAllDataTypesVerbose() {
+        return Arrays.stream(BuiltInDataType.values())
+                .map(type -> new DataType(type.getName(), type.getDescription()))
+                .collect(Collectors.toList());
+    }
 }
 ```
 
